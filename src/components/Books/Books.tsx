@@ -10,8 +10,9 @@ export const Books = () => {
   const { booksToShow, toggleBooksView, addBook, isPrivateBooks, isFetchBooksErr } = useContext(BooksContext) as IBooksContext;
 
   const onAddBook = async () => {
-    let name = prompt('Name', 'postnikov') ?? '';
-    let author = prompt('Author', 'x_author') ?? '';
+    let name = prompt('Name', 'postnikov');
+    let author = prompt('Author', 'x_author');
+    if (!name || !author) return alert(EMsg.ERR)
 
     const isBookAdded: boolean | null = await addBook(name, author);
     alert(isBookAdded ? EMsg.SUCCESS : EMsg.ERR);
