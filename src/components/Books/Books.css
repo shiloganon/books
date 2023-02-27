@@ -1,0 +1,25 @@
+.books {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 0;
+    padding: 10px 15px;
+}

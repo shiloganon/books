@@ -1,0 +1,11 @@
+.book-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.img{
+    border-radius: 15px;
+}
